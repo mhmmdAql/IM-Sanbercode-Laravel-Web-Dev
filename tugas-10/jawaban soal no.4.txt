@@ -1,0 +1,17 @@
+Soal 4 mengambil data
+
+##mengambil data user tanpa password
+
+SELECT id, name, email FROM users;
+
+##query mengambil data price lebih dari 1000000
+
+SELECT * FROM items WHERE price > 1000000;
+
+##query mengambil data like 
+
+SELECT * FROM items WHERE name LIKE "%sang";
+
+##query menampilkan data items dengan join
+
+SELECT items.name, items.description, items.price, items.stock, items.category_id, category.name AS kategori FROM items INNER JOIN category on items.category_id = category.id;

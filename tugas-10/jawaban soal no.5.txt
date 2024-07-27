@@ -1,0 +1,5 @@
+Soal 5 mengubah data
+
+##query mengubah data price
+
+UPDATE items SET price = 2500000 WHERE items.id = 1;
